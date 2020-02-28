@@ -6,7 +6,7 @@ Terraform module to create AWS MSK instance in AWS.
 
 ```hcl
 module "aws_msk" {
-    source = "git::ssh://git@git.eventim.net/deployment/terraform/terraform-aws-msk.git?ref=tags/1.0.1"
+    source = "git::ssh://git@github.com:gaarm/terraform-aws-msk.git?ref=tags/1.0.0"
     product_name                = var.product_name
     environment                 = var.environment
     tags                        = var.tags
@@ -48,4 +48,4 @@ YAML
 
 | Name | Description |
 |------|-------------|
-| bootstrap_brokers | A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster |
+| bootstrap_brokers | A comma separated list of one or more hostname:port pairs of kafka brokers suitable to bootstrap connectivity to the kafka cluster |
